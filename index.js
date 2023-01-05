@@ -60,8 +60,8 @@ const fetchDataL = async () => {
 	const apiUrl2 = `https://v3.football.api-sports.io/fixtures?league=2&season=2022&last=5`;
 	const res1 = await fetch(apiUrl1, requestOptions);
 	const res2 = await fetch(apiUrl2, requestOptions);
-	const r1 = await res1.json().response;
-	const r2 = await res2.json().response;
+	const r1 = await res1.json();
+	const r2 = await res2.json();
 	dataL = [r1, r2];
 };
 fetchDataL();
