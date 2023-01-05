@@ -8,7 +8,7 @@ const fetch = (...args) =>
 var requestOptions = {
 	method: "GET",
 	headers: {
-		"x-rapidapi-key": "8ea474ed8d5e143a9b74941ea336b09e",
+		"x-rapidapi-key": "996a8a34e53b195754e07f006fb268cc",
 		"x-rapidapi-host": "v3.football.api-sports.io",
 	},
 	redirect: "follow",
