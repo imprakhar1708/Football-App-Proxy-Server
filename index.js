@@ -43,13 +43,13 @@ const fetchDataSDLL = async () => {
 fetchDataSDPL();
 fetchDataSDLL();
 fetchDataSDBL();
-app.get("standings/39", async (req, res) => {
+app.get("/standings/39", async (req, res) => {
 	res.json(dataSDPL);
 });
-app.get("standings/140", async (req, res) => {
+app.get("/standings/140", async (req, res) => {
 	res.json(dataSDLL);
 });
-app.get("standings/78", async (req, res) => {
+app.get("/standings/78", async (req, res) => {
 	res.json(dataSDBL);
 });
 
@@ -66,7 +66,7 @@ const fetchDataL = async () => {
 };
 fetchDataL();
 
-router.get("/livescores", async (req, res) => {
+app.get("/livescores", async (req, res) => {
 	res.json(dataL);
 });
 
@@ -107,15 +107,15 @@ fetchDataTSPL();
 fetchDataTSCL();
 fetchDataTSBL();
 fetchDataTSLL();
-app.get("topsc/39", async (req, res) => {
+app.get("/topsc/39", async (req, res) => {
 	res.json(dataTSPL);
 });
-app.get("topsc/2", async (req, res) => {
+app.get("/topsc/2", async (req, res) => {
 	res.json(dataTSCL);
 });
-app.get("topsc/140", async (req, res) => {
+app.get("/topsc/140", async (req, res) => {
 	res.json(dataTSLL);
 });
-app.get("topsc/78", async (req, res) => {
+app.get("/topsc/78", async (req, res) => {
 	res.json(dataTSBL);
 });
