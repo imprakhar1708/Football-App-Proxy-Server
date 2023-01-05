@@ -16,7 +16,7 @@ var requestOptions = {
 app.use(
 	cors({
 		Credentials: true,
-		origin: ["3.75.158.163", "3.125.183.140", "35.157.117.28"],
+		origin: ["http://localhost:3000"],
 	})
 );
 app.listen(port);
